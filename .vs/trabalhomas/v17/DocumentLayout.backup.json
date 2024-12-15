@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\source\\repos\\trabalhomas\\diet.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:diet.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\source\\repos\\trabalhomas\\illness.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:illness.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\source\\repos\\trabalhomas\\issues.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:issues.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\source\\repos\\trabalhomas\\howmany.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:howmany.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\source\\repos\\trabalhomas\\dogname.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:dogname.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\source\\repos\\trabalhomas\\food.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:food.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\source\\repos\\trabalhomas\\weight.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:weight.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "weight.html",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\weight.html",
+              "RelativeDocumentMoniker": "weight.html",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\weight.html",
+              "RelativeToolTip": "weight.html",
+              "ViewState": "AgIAANgAAAAAAAAAAAAwwOkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-15T14:03:12.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "diet.html",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\diet.html",
+              "RelativeDocumentMoniker": "diet.html",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\diet.html",
+              "RelativeToolTip": "diet.html",
+              "ViewState": "AgIAALYAAAAAAAAAAAAwwM0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-15T13:45:06.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "illness.html",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\illness.html",
+              "RelativeDocumentMoniker": "illness.html",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\illness.html",
+              "RelativeToolTip": "illness.html",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAAAOYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-15T12:32:26.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "issues.html",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\issues.html",
+              "RelativeDocumentMoniker": "issues.html",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\issues.html",
+              "RelativeToolTip": "issues.html",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAwwIoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-15T12:27:07.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "food.html",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\food.html",
+              "RelativeDocumentMoniker": "food.html",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\food.html",
+              "RelativeToolTip": "food.html",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-15T12:03:39.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dogname.html",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\dogname.html",
+              "RelativeDocumentMoniker": "dogname.html",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\dogname.html",
+              "RelativeToolTip": "dogname.html",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAIcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-15T10:48:39.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "howmany.html",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\howmany.html",
+              "RelativeDocumentMoniker": "howmany.html",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Farias\\source\\repos\\trabalhomas\\howmany.html",
+              "RelativeToolTip": "howmany.html",
+              "ViewState": "AgIAAHUAAAAAAAAAAIAwwIUAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-15T10:39:14.599Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
