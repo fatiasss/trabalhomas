@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    />
+    <!--Remote links-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic Styles for the Form */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .create-account-link {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .create-account-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 class="form-header">Sign In</h2>
+        
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" data-bind="value: email" placeholder="Enter your email" />
+        <div id="email-error" class="error-message"></div>
+        
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" data-bind="value: password" placeholder="Enter your password" />
+        <div id="password-error" class="error-message"></div>
+        
+        <!-- Sign-In Button -->
+        <button id="sign-in-button">Sign In</button>
+
+        <!-- Success/Error message -->
+        <div id="sign-in-status" class="error-message"></div>
+
+        <!-- Link to Create Account -->
+        <div class="form-footer">
+            <p>Don't have an account? <a href="create.html" class="create-account-link">Create one here</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        function ViewModel() {
+            const self = this;
+            self.email = ko.observable("");
+            self.password = ko.observable("");
+        }
+
+        const viewModel = new ViewModel();
+        ko.applyBindings(viewModel);
+
+        // Sign-In Process code here
+        $("#sign-in-button").on("click", function () {
+            console.log("Botão Sign-in clicado.");
+
+            let valid = true;
+            $(".error-message").text(""); // Reset all error messages
+            $("#sign-in-status").text(""); // Reset status message
+
+            const enteredEmail = viewModel.email();
+            const enteredPassword = viewModel.password();  // Assume the password is entered in the viewModel
+
+            // 1. Validate: Ensure the email field is filled in first
+            if (!enteredEmail) {
+                valid = false;
+                console.log("Validação falhou: Email vazio.");
+                $("#email-error").text("O email é obrigatório.");
+            } else if (!validateEmail(enteredEmail)) {
+                valid = false;
+                console.log("Validação falhou: Email inválido.");
+                $("#email-error").text("O email é inválido.");
+            }
+
+            // 2. If email is valid, validate the password
+            if (!enteredPassword) {
+                valid = false;
+                console.log("Validação falhou: Senha vazia.");
+                $("#password-error").text("A senha é obrigatória.");
+            }
+
+            if (!valid) {
+                // Prevent form submission if validation fails
+                $("#sign-in-status").text("Por favor, preencha todos os campos corretamente.");
+                return; 
+            }
+
+            // 3. Retrieve the stored data from the backend (salt and encrypted data)
+            const storedEncryptedData = localStorage.getItem("user_data"); // This should be retrieved from your backend
+            const storedSalt = localStorage.getItem("user_salt"); // This should be stored on the backend as well
+
+            // Check if the user exists in the system (i.e., data is available)
+            if (!storedEncryptedData || !storedSalt) {
+                valid = false;
+                console.log("Usuário não encontrado.");
+                $("#sign-in-status").text("Usuário não encontrado.");
+                return; // Prevent further execution if no user is found
+            }
+
+            // 4. Derive the key using the entered password and stored salt
+            const derivedKey = CryptoJS.PBKDF2(enteredPassword, CryptoJS.enc.Base64.parse(storedSalt), { keySize: 256 / 32, iterations: 1000 }).toString(CryptoJS.enc.Base64);
+
+            // 5. Decrypt the stored encrypted data using the derived key
+            const bytes = CryptoJS.AES.decrypt(storedEncryptedData, derivedKey);
+            const decryptedData = bytes.toString(CryptoJS.enc.Utf8);
+
+            // 6. Verify if the decrypted data matches the user details
+            if (decryptedData) {
+                const userData = JSON.parse(decryptedData);
+                if (userData.email !== enteredEmail) {
+                    valid = false;
+                    console.log("Falha: Email não corresponde.");
+                    $("#sign-in-status").text("Email ou senha incorretos.");
+                } else {
+                    console.log("Login bem-sucedido.");
+                    $("#sign-in-status").text("Login bem-sucedido.");
+                }
+            } else {
+                valid = false;
+                console.log("Falha na descriptografia dos dados.");
+                $("#sign-in-status").text("Senha incorreta.");
+            }
+
+            if (!valid) {
+                console.log("Erro de autenticação.");
+            }
+        });
+
+        // Function to validate email format using a regular expression
+        function validateEmail(email) {
+            const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+</body>
+</html>
