@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\João Farias\\source\\repos\\trabalhomas\\trabalhomas.csproj",
+      "projectUniqueName": "C:\\Users\\João Farias\\Desktop\\lei\\itw\\trabalhomas\\trabalhomas.csproj",
       "projectName": "trabalhomas",
-      "projectPath": "C:\\Users\\João Farias\\source\\repos\\trabalhomas\\trabalhomas.csproj",
+      "projectPath": "C:\\Users\\João Farias\\Desktop\\lei\\itw\\trabalhomas\\trabalhomas.csproj",
       "packagesPath": "C:\\Users\\João Farias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\João Farias\\source\\repos\\trabalhomas\\obj\\",
+      "outputPath": "C:\\Users\\João Farias\\Desktop\\lei\\itw\\trabalhomas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\João Farias\\AppData\\Roaming\\NuGet\\NuGet.Config",

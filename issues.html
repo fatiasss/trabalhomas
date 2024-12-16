@@ -6,6 +6,8 @@
     <title>PawPal</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <style>
         body {
             background-color: #173B33;
@@ -41,6 +43,32 @@
             margin-bottom: 20px; /* Space below the card */
         }
 
+        .custom-input, .custom-select {
+            all: unset;
+            width: 100%;
+            color: orange;
+            font-size: 28px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            border-bottom: 2px dotted orange;
+            text-align: center;
+            padding: 5px;
+        }
+
+            .custom-input::placeholder {
+                color: rgba(255, 165, 0, 0.6);
+            }
+
+        .custom-select {
+            appearance: none;
+            background-color: transparent;
+            text-align-last: center;
+        }
+
+            .custom-input:focus, .custom-select:focus {
+                outline: none;
+            }
+
         .app-title {
             font-size: 32px;
             font-weight: 900;
@@ -56,8 +84,9 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            border: none; /* Remove default border */
+            border: 1px solid white; /* Remove default border */
             transition: background 0.3s; /* Smooth transition */
+            width: 100%;
         }
 
             .next-button:hover {
@@ -72,14 +101,15 @@
 <body>
     <div class="main-container">
         <div class="header">
-            <img src="https://via.placeholder.com/37x35" alt="Icon" class="float-end" />
+            <a href="food.html"><i class="fa fa-arrow-left float-start" style="color:white; height:30px; width:30px"></i></a>
+            <img src="images/images-removebg-preview.png" alt="Icon" class="float-end" style="width:37px; height:35px" />
             <h1 class="app-title">Paty</h1>
         </div>
         <form class="text-center mt-4" id="questionnaireForm">
             <div class="label-card">
                 <h2>She</h2>
                 <div class="form-group mb-3">
-                    <select class="form-select" aria-label="Select illness" id="foodType">
+                    <select class="form-select custom-input custom-select" aria-label="Select illness" id="foodType">
                         <option value="has">has</option>
                         <option value="doesn't have">doesn't have</option>
                     </select>
@@ -87,15 +117,15 @@
                 <h2>health issues</h2>
                 <h2>and</h2>
                 <div class="form-group mb-3">
-                    <select class="form-select" aria-label="Select diet" id="scraps">
+                    <select class="form-select custom-input custom-select" aria-label="Select diet" id="scraps">
                         <option value="requires">requires</option>
                         <option value="doesn't require">doesn't require</option>
                     </select>
                 </div>
                 <h2>a prescription</h2>
                 <h2>diet</h2>
+                <button type="submit" class="next-button">Next</button>
             </div>
-            <button type="submit" class="next-button">Next</button>
         </form>
     </div>
     <!-- Bootstrap JS -->
