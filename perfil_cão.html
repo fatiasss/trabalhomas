@@ -16,6 +16,7 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            color: black
         }
 
         .section-title {
@@ -23,7 +24,7 @@
         }
 
         .section-value {
-            color: #555;
+            color: white;
         }
 
         .arrow {
@@ -52,92 +53,158 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
+        .error-message {
+            color: #C62828;
+            font-size: 0.9em;
+        }
+
+        .logo {
+            height: 100px;
+            max-width: 100%;
+            float: right;
+        }
+
+        body {
+            background-color: #173B33;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #E4572E;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        button.btn {
+            color: #E4572E;
+            background-color: white;
+            border-radius: 15px;
+            border: none;
+        }
+
+            button.btn:hover {
+                background-color: #f7f7f7;
+            }
+
+        .form-control {
+            background-color: white;
+            color: black;
+        }
+
+        .form-check-label {
+            color: white;
+        }
+
+        input::placeholder {
+            color: #999;
+        }
+        #mt-5 {align-content: center
+
+
+        }
     </style>
+    
 </head>
 <body>
-    <div class="content">
-        <div class="section">
-            <div class="section-title">Name</div>
-            <div class="section-value" contenteditable="true" id="name">Paty</div>
-            <div class="arrow" style="top: 25px; left: 275px;"></div>
-        </div>
+    <div class=""mt-5">
+        <button type="button" class="btn" onclick="window.location.href='login.html'">
+            <i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i>
+        </button>
+        <img class="logo" src="images/images-removebg-preview.png">
+        <div class="content container">
+            <div class="section">
+                <div class="section-title">Name</div>
+                <div class="section-value" contenteditable="true" id="name">Paty</div>
+                <div class="arrow" style="top: 25px; left: 275px;"></div>
+            </div>
 
-        <div class="section">
-            <div class="section-title">Has been Spayed?</div>
-            <div class="section-value" contenteditable="true" id="spayed">Yes</div>
-            <div class="arrow" style="top: 25px; left: 275px;"></div>
-        </div>
+            <div class="section">
+                <div class="section-title">Has been Spayed?</div>
+                <div class="section-value" contenteditable="true" id="spayed">Yes</div>
+                <div class="arrow" style="top: 25px; left: 275px;"></div>
+            </div>
 
-        <div class="section">
-            <div class="section-title">Breed</div>
-            <div class="section-value" contenteditable="true" id="breed">Corgi</div>
-            <div class="arrow" style="top: 25px; left: 275px;"></div>
-        </div>
+            <div class="section">
+                <div class="section-title">Breed</div>
+                <div class="section-value" contenteditable="true" id="breed">Corgi</div>
+                <div class="arrow" style="top: 25px; left: 275px;"></div>
+            </div>
 
-        <div class="section">
-            <div class="section-title">Weight</div>
-            <div class="section-value" contenteditable="true" id="weight">12 kgs</div>
-            <div class="arrow" style="top: 25px; left: 275px;"></div>
-        </div>
+            <div class="section">
+                <div class="section-title">Weight</div>
+                <div class="section-value" contenteditable="true" id="weight">12 kgs</div>
+                <div class="arrow" style="top: 25px; left: 275px;"></div>
+            </div>
 
-        <div class="section attribute-section">
-            <div class="section-title">Attributes</div>
-            <div class="section-value" contenteditable="true">Active</div>
-            <div class="section-value" contenteditable="true">Picky Eater</div>
-            <div class="section-value" contenteditable="true">Round Body</div>
-            <div class="arrow" style="top: 25px; left: 275px;"></div>
-        </div>
+            <div class="section attribute-section">
+                <div class="section-title">Attributes</div>
+                <div class="section-value" contenteditable="true">Active</div>
+                <div class="section-value" contenteditable="true">Picky Eater</div>
+                <div class="section-value" contenteditable="true">Round Body</div>
+                <div class="arrow" style="top: 25px; left: 275px;"></div>
+            </div>
 
-        <div class="section">
-            <div class="section-title">Illnesses</div>
-            <div class="section-value" contenteditable="true">Bad Breath</div>
-            <div class="section-value" contenteditable="true">Constipation</div>
-            <div class="arrow" style="top: 25px; left: 275px;"></div>
-        </div>
+            <div class="section">
+                <div class="section-title">Illnesses</div>
+                <div class="section-value" contenteditable="true">Bad Breath</div>
+                <div class="section-value" contenteditable="true">Constipation</div>
+                <div class="arrow" style="top: 25px; left: 275px;"></div>
+            </div>
 
-        <div class="section">
-            <div class="section-title">Prescription Diet</div>
-            <div class="section-value" contenteditable="true">None</div>
-            <div class="arrow" style="top: 25px; left: 275px;"></div>
-        </div>
+            <div class="section">
+                <div class="section-title">Prescription Diet</div>
+                <div class="section-value" contenteditable="true">None</div>
+                <div class="arrow" style="top: 25px; left: 275px;"></div>
+            </div>
 
-        <div class="section">
-            <div class="section-title">Is Vaccinated</div>
-            <div class="section-value" contenteditable="true">Yes</div>
-            <div class="arrow" style="top: 25px; left: 275px;"></div>
-        </div>
+            <div class="section">
+                <div class="section-title">Is Vaccinated</div>
+                <div class="section-value" contenteditable="true">Yes</div>
+                <div class="arrow" style="top: 25px; left: 275px;"></div>
+            </div>
 
-        <div class="section">
-            <div class="section-title">Previous Treatments</div>
-            <div class="section-value" contenteditable="true">None</div>
-            <div class="arrow" style="top: 25px; left: 275px;"></div>
-        </div>
+            <div class="section">
+                <div class="section-title">Previous Treatments</div>
+                <div class="section-value" contenteditable="true">None</div>
+                <div class="arrow" style="top: 25px; left: 275px;"></div>
+            </div>
 
-        <button id="loadButton"><a href="home.html"</a>Back</button>
+            <button id="loadButton"><a href="home.html"</a>Back</button>
+        </div>
     </div>
 
 
 
-    <script>
+        <script>
 
-            document.getElementById("loadButton").onclick = function() {
-            var name = document.getElementById("name").innerText;
-            var spayed = document.getElementById("spayed").innerText;
-            var breed = document.getElementById("breed").innerText;
-            var weight = document.getElementById("weight").innerText;
-            var attributes = [];
-            document.querySelectorAll('.badge').forEach(function(badge) {
-                attributes.push(badge.innerText);
-            });
+            document.getElementById("loadButton").onclick = function () {
+                var name = document.getElementById("name").innerText;
+                var spayed = document.getElementById("spayed").innerText;
+                var breed = document.getElementById("breed").innerText;
+                var weight = document.getElementById("weight").innerText;
+                var attributes = [];
+                document.querySelectorAll('.badge').forEach(function (badge) {
+                    attributes.push(badge.innerText);
+                });
 
-            console.log("Updated Information:");
-            console.log("Name: " + name);
-            console.log("Spayed: " + spayed);
-            console.log("Breed: " + breed);
-            console.log("Weight: " + weight);
-            console.log("Attributes: " + attributes.join(", "));
-        }
-    </script>
+                console.log("Updated Information:");
+                console.log("Name: " + name);
+                console.log("Spayed: " + spayed);
+                console.log("Breed: " + breed);
+                console.log("Weight: " + weight);
+                console.log("Attributes: " + attributes.join(", "));
+            }
+        </script>
 
 </body>
 </html>
