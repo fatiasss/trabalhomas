@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #173B33;
+            color: #333;
+            font-size: 18px; /* Increase base font size */
+        }
+
+        /* Container Styling */
+        .container {
+            width: 100%;
+            max-width: 360px;
+            margin: 40px auto;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 20px 25px; /* Adjust padding for larger text */
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: #173B33;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px; /* Adjust padding for larger text */
+            border-radius: 8px 8px 0 0;
+            color: #fff;
+            font-size: 1.8rem; /* Increase header text size */
+        }
+
+            .header .btn-sm {
+                color: #fff;
+                font-size: 1.5rem; /* Increase button text size */
+            }
+
+        .logo {
+            width: 60px; /* Adjust size for larger text */
+            height: 60px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .logo img {
+                width: 90%;
+                height: auto;
+            }
+
+        /* Section Headers */
+        .frame-2 .text-wrapper {
+            font-size: 1.9rem; 
+            font-weight: bold;
+            margin: 10px 0 5px;
+            color: #173B33;
+        }
+
+        .frame-2 p {
+            font-size: 1.6rem; 
+            color: #666;
+            margin: 0;
+        }
+
+        .frame-2 hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 10px 0;
+            font-family: Inter;
+        }
+
+       
+        h1 {
+            font-size: 2rem; 
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #recipeList {
+            padding: 0;
+            margin: 10px 0;
+        }
+
+            #recipeList li {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 0; 
+                font-size: 1.8rem; 
+                color: #333;
+                font-family: Inter;
+            }
+
+        #totalPrice,
+        #totalPriceAfterTax {
+            font-size: 1.8rem; 
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+        }
+
+        p {
+            font-size: 1.5rem; 
+            color: #666;
+            margin: 10px 0;
+        }
+
+        
+        #totalPriceAfterTax {
+            color: #173B33;
+            font-size: 1.4rem; 
+        }
+
+        
+        .next-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-orange {
+            background-color: #FF8C42;
+            color: white;
+            text-decoration: none;
+            padding: 15px 35px; 
+            font-size: 1.2rem; 
+            border-radius: 8px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+            .btn-orange:hover {
+                background-color: #e07a35;
+                transform: scale(1.05);
+            }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="./chooseorder.html" class="btn btn-sm small" style="color:white; text-align:left;">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <img src="https://www.thefarmersdog.com/images/logo-a36f2a.png" alt="Icon" class="logo" />
+        </div>
+
+        <div class="frame-2">
+            <div class="text-wrapper">First Box</div>
+            <p class="we-ll-start-with-a">
+                <span class="span">We’ll start with a 14 day first box set to ship the </span>
+                <span class="text-wrapper-2">week of December 2nd.<br /></span>
+                <hr />
+            </p>
+            <div class="text-wrapper">After the First Box</div>
+            <p class="your-selected-plan">
+                <span class="span">Your selected plan will be billed and shipped </span>
+                <span class="text-wrapper-2">every 40 days.<br /></span>
+                <hr />
+            </p>
+        </div>
+
+        <h1> Your order</h1>
+        <ul id="recipeList"></ul>
+
+        <div id="totalPrice"></div>
+        <p>Shipping Free Always!!</p>
+
+        
+        <div id="totalPriceAfterTax"></div>
+
+        <div class="next-button text-center">
+            <a href="./renewsub.html" class="btn-orange">
+                Next
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const recipeList = document.getElementById("recipeList");
+            const totalPriceDisplay = document.getElementById("totalPrice");
+            const totalPriceAfterTaxDisplay = document.getElementById("totalPriceAfterTax");
+
+            const selectedRecipes = JSON.parse(localStorage.getItem("selectedRecipes")) || [];
+            const totalPrice = selectedRecipes.reduce((sum, recipe) => sum + recipe.price, 0);
+
+            const taxAmount = 2.26; 
+
+            if (selectedRecipes.length === 0) {
+                recipeList.innerHTML = "<p>No recipes selected.</p>";
+                totalPriceDisplay.textContent = "Total Price: $0.00";
+                totalPriceAfterTaxDisplay.textContent = "Total Price After Tax: $0.00";
+            } else {
+                selectedRecipes.forEach(recipe => {
+                    const li = document.createElement("li");
+                    li.textContent = `${recipe.name} - $${recipe.price.toFixed(2)}`;
+                    recipeList.appendChild(li);
+                });
+                totalPriceDisplay.textContent = `Fresh Food Subtotal: $${totalPrice.toFixed(2)}`;
+
+               
+                const totalPriceAfterTax = totalPrice + taxAmount;
+                totalPriceAfterTaxDisplay.textContent = `Total Price After Tax: $${totalPriceAfterTax.toFixed(2)}`;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Reset default margins, paddings, and box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #173B33;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        /* Container for form */
+        .container {
+            width: 320px;
+            height: auto; /* Allow height to adjust based on content */
+            background: white;
+            border-radius: 10px;
+            position: relative;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+            
+        .header {
+            background-color: #173B33;
+            padding: 20px 10px; 
+            color: white;
+            text-align: left; 
+            border-radius: 10px 10px 0 0; 
+            display: flex; 
+            align-items: center; 
+            justify-content: flex-start; 
+        }
+
+        .logo {
+            width: 70px; 
+            height: 70px;
+            background-color: white; 
+            border-radius: 50%; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-left: auto; 
+        }
+
+            .logo img {
+                width: 60px; 
+                height: 60px;
+                border-radius: 50%; 
+                object-fit: cover; 
+            }
+
+
+          
+
+        
+        .section-header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #114034;
+            margin: 20px 0 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: bold;
+            color: #4d4d4d;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #a9a9a9;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+            input:focus {
+                border-color: #114034;
+                box-shadow: 0 0 5px rgba(17, 64, 52, 0.4);
+            }
+
+        
+        .form-inline {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        
+        .badge {
+            background-color: #f05638;
+            color: white;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 50px;
+            margin-right: 8px;
+        }
+
+        /* Submit button */
+        .submit-btn {
+            background-color: #f05638;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+            .submit-btn:hover {
+                background-color: #e0492c;
+                transform: scale(1.05);
+            }
+
+            .submit-btn:active {
+                background-color: #d8492e;
+                transform: scale(1);
+            }
+
+        /* Error state for inputs */
+        input.error {
+            border-color: red;
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+        }
+
+        /* Back arrow button */
+        .btn-sm {
+            color: #114034;
+            font-size: 18px;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+            /* Button to match color and animation */
+            .btn-sm i {
+                transition: transform 0.2s ease;
+            }
+
+            .btn-sm:hover i {
+                transform: translateX(-3px);
+            }
+
+
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <a href="./renewsub.html" class="btn btn-sm small" style="color:white">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </a>
+                    <img src="https://www.thefarmersdog.com/images/logo-a36f2a.png" alt="Icon" class="logo" />
+                    
+                </div>
+            
+                <form id="shippingForm" onsubmit="return validateForm()">
+                    <div class="row">
+                       
+                        <div class="section-header">
+                            Shipping address
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="streetAddress">Street Address</label>
+                        <input type="text" id="streetAddress" placeholder="4836 Pritchard Court" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apartmentNumber">Apartment Number</label>
+                        <input type="text" id="apartmentNumber" placeholder="C303" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="Oklahoma City" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" placeholder="Oklahoma" required>
+                    </div>
+
+                    <div class="section-header">
+
+                        Credit Card Details
+                    </div>
+                    <div class="form-group">
+                        <label for="nameOnCard">Name on Card</label>
+                        <input type="text" id="nameOnCard" placeholder="Igor Coelho" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" placeholder="1234123412341234" required>
+                    </div>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="expiration">Expiration Date (MM/YYYY)</label>
+                            <input type="text" id="expiration" placeholder="12/2026" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" placeholder="837" required>
+                        </div>
+                    </div>
+
+
+                    <button id="startBoxButton" class="submit-btn" type="submit">
+                        Start first box for $0.00
+                    </button>
+                </form>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const selectedRecipes = JSON.parse(localStorage.getItem("selectedRecipes")) || [];
+                    const totalPrice = selectedRecipes.reduce((sum, recipe) => sum + recipe.price, 0);
+                    const priceButton = document.getElementById("startBoxButton");
+
+
+                    priceButton.textContent = `Start first box for $${totalPrice.toFixed(2)}`;
+                });
+
+                function validateForm() {
+                    const form = document.getElementById('shippingForm');
+                    const inputs = form.querySelectorAll('input[required]');
+                    let isValid = true;
+
+                    inputs.forEach(input => {
+                        if (!input.value) {
+                            input.classList.add('error');
+                            isValid = false;
+                        } else {
+                            input.classList.remove('error');
+                        }
+                    });
+
+                    if (isValid) {
+
+                        const selectedRecipes = JSON.parse(localStorage.getItem("selectedRecipes")) || [];
+                        const totalPrice = selectedRecipes.reduce((sum, recipe) => sum + recipe.price, 0);
+                        window.location.href = `endpage.html?totalPrice=${totalPrice.toFixed(2)}`;
+                    } else {
+                        alert('Please fill in all required fields.');
+                    }
+
+                    return false;
+                }
+            </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        body {
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .thank-you-container {
+            background-color: white;
+            width: 90%;
+            max-width: 320px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .logo-container {
+            background-color: #ec5d48;
+            padding: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+       
+        h1 {
+            color: #204339;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+            h1 span {
+                font-weight: bold;
+            }
+
+       
+        p {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+            p .highlight {
+                color: #ec5d48;
+                font-weight: bold;
+            }
+
+       
+        .home-btn {
+            display: inline-block;
+            background-color: #ec5d48;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 20px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+            .home-btn:hover {
+                background-color: #d94c3a;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        
+        <div class="logo-container">
+            <div class="logo">The Farmer's Dog</div>
+        </div>
+
+        <h1>Thank you for <br> <span>your purchase!</span></h1>
+        <p>Your order is set to be shipped on the <span class="highlight">in 5 business days.</span></p>
+        <p>We hope you and your dogs enjoy <span class="highlight">The Farmer's Dog!</span></p>
+
+        <a href="home.html" class="home-btn">Home Menu</a> <!-- adicionar o link da home -->
+    </div>
+</body>
+</html>
