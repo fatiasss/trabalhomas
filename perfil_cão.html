@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Section Values</title>
+    <style>
+        .content {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .section-title {
+            font-weight: bold;
+        }
+
+        .section-value {
+            color: #555;
+        }
+
+        .arrow {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+        }
+
+        .attribute-section .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-right: 5px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        #loadButton {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="section">
+            <div class="section-title">Name</div>
+            <div class="section-value" contenteditable="true" id="name">Paty</div>
+            <div class="arrow" style="top: 25px; left: 275px;"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Has been Spayed?</div>
+            <div class="section-value" contenteditable="true" id="spayed">Yes</div>
+            <div class="arrow" style="top: 25px; left: 275px;"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Breed</div>
+            <div class="section-value" contenteditable="true" id="breed">Corgi</div>
+            <div class="arrow" style="top: 25px; left: 275px;"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Weight</div>
+            <div class="section-value" contenteditable="true" id="weight">12 kgs</div>
+            <div class="arrow" style="top: 25px; left: 275px;"></div>
+        </div>
+
+        <div class="section attribute-section">
+            <div class="section-title">Attributes</div>
+            <div class="section-value" contenteditable="true">Active</div>
+            <div class="section-value" contenteditable="true">Picky Eater</div>
+            <div class="section-value" contenteditable="true">Round Body</div>
+            <div class="arrow" style="top: 25px; left: 275px;"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Illnesses</div>
+            <div class="section-value" contenteditable="true">Bad Breath</div>
+            <div class="section-value" contenteditable="true">Constipation</div>
+            <div class="arrow" style="top: 25px; left: 275px;"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Prescription Diet</div>
+            <div class="section-value" contenteditable="true">None</div>
+            <div class="arrow" style="top: 25px; left: 275px;"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Is Vaccinated</div>
+            <div class="section-value" contenteditable="true">Yes</div>
+            <div class="arrow" style="top: 25px; left: 275px;"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Previous Treatments</div>
+            <div class="section-value" contenteditable="true">None</div>
+            <div class="arrow" style="top: 25px; left: 275px;"></div>
+        </div>
+
+        <button id="loadButton"><a href="home.html"</a>Back</button>
+    </div>
+
+
+
+    <script>
+
+            document.getElementById("loadButton").onclick = function() {
+            var name = document.getElementById("name").innerText;
+            var spayed = document.getElementById("spayed").innerText;
+            var breed = document.getElementById("breed").innerText;
+            var weight = document.getElementById("weight").innerText;
+            var attributes = [];
+            document.querySelectorAll('.badge').forEach(function(badge) {
+                attributes.push(badge.innerText);
+            });
+
+            console.log("Updated Information:");
+            console.log("Name: " + name);
+            console.log("Spayed: " + spayed);
+            console.log("Breed: " + breed);
+            console.log("Weight: " + weight);
+            console.log("Attributes: " + attributes.join(", "));
+        }
+    </script>
+
+</body>
+</html>

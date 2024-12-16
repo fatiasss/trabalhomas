@@ -61,3 +61,35 @@ C:\Users\João Farias\Desktop\lei\itw\trabalhomas\obj\Debug\net8.0\refint\trabal
 C:\Users\João Farias\Desktop\lei\itw\trabalhomas\obj\Debug\net8.0\trabalhomas.pdb
 C:\Users\João Farias\Desktop\lei\itw\trabalhomas\obj\Debug\net8.0\trabalhomas.genruntimeconfig.cache
 C:\Users\João Farias\Desktop\lei\itw\trabalhomas\obj\Debug\net8.0\ref\trabalhomas.dll
+C:\Users\eduar\Documents\GitHub\trabalhomas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\eduar\Documents\GitHub\trabalhomas\bin\Debug\net8.0\appsettings.json
+C:\Users\eduar\Documents\GitHub\trabalhomas\bin\Debug\net8.0\libman.json
+C:\Users\eduar\Documents\GitHub\trabalhomas\bin\Debug\net8.0\trabalhomas.staticwebassets.runtime.json
+C:\Users\eduar\Documents\GitHub\trabalhomas\bin\Debug\net8.0\trabalhomas.exe
+C:\Users\eduar\Documents\GitHub\trabalhomas\bin\Debug\net8.0\trabalhomas.deps.json
+C:\Users\eduar\Documents\GitHub\trabalhomas\bin\Debug\net8.0\trabalhomas.runtimeconfig.json
+C:\Users\eduar\Documents\GitHub\trabalhomas\bin\Debug\net8.0\trabalhomas.dll
+C:\Users\eduar\Documents\GitHub\trabalhomas\bin\Debug\net8.0\trabalhomas.pdb
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.AssemblyInfoInputs.cache
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.AssemblyInfo.cs
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.csproj.CoreCompileInputs.cache
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.RazorAssemblyInfo.cache
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.RazorAssemblyInfo.cs
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.sourcelink.json
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\staticwebassets\msbuild.trabalhomas.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\staticwebassets\msbuild.build.trabalhomas.props
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.trabalhomas.props
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.trabalhomas.props
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\scopedcss\bundle\trabalhomas.styles.css
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\scopedcss\projectbundle\trabalhomas.bundle.scp.css
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.dll
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\refint\trabalhomas.dll
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.pdb
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\trabalhomas.genruntimeconfig.cache
+C:\Users\eduar\Documents\GitHub\trabalhomas\obj\Debug\net8.0\ref\trabalhomas.dll
