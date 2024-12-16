@@ -10,18 +10,61 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
-        .error-message { color: red; font-size: 0.9em; }
-        .logo {height: 100px; max-width: 100%; float: right}
-        body {font-family: "Open Sans"}
+        .error-message { 
+            color: #C62828; 
+            font-size: 0.9em; 
+        }
+
+        .logo {
+            height: 80px; 
+            max-width: 100%; 
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+        body {
+            background-color: #173B33;
+            font-family: 'Raleway', sans-serif;
+            color: white;
+        }
+
+        .container {
+            background-color: #E4572E;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: white;
+            margin-top: 15px;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .form-footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+
     </style>
   </head>
   <body>
     <div class="container mt-5">
-      <button type="button" class="btn" onclick="window.location.href='create-account.html'">
-          <i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i>
-      </button>
-      <img class="logo" src="images/images-removebg-preview.png">
-      <h2 class="mb-4" style="clear: right"><strong>Entrar</strong></h2>
+      <img class="logo" src="images/images-removebg-preview.png" alt="PawPal Logo">
+      <h2 class="mb-4">Entrar</h2>
 
       <form id="login-form">
           <div class="mb-3">
@@ -51,13 +94,13 @@
               </label>
               <div id="password-error" class="error-message"></div>
           </div>
-          <!-- Link to Create Account -->
-            <div class="form-footer">
-                <p>Don't have an account? <a href="create.html" class="create-account-link">Create one here</a></p>
-            </div>
 
-          <div style="display: flex; justify-content: center; margin-top: 70px">
-              <button type="button" class="btn btn-light" id="login-button" style="height: 50px"><strong>Entrar</strong></button>
+          <div class="form-footer">
+              <p>Don't have an account? <a href="create.html" class="create-account-link">Create one here</a></p>
+          </div>
+
+          <div style="display: flex; justify-content: center; margin-top: 30px;">
+              <button type="button" class="btn btn-light" id="login-button" style="height: 50px;"><strong>Entrar</strong></button>
           </div>
       </form>
     </div>

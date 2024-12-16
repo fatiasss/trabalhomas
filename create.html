@@ -12,9 +12,60 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" rel="stylesheet" />
     <link href="login.css" rel="stylesheet" />
     <style>
-        .error-message { color: red; font-size: 0.9em; }
-        .logo {height: 100px; max-width: 100%; float: right}
-        body {font-family: "Open Sans"}
+        .error-message {
+            color: #C62828;
+            font-size: 0.9em;
+        }
+
+        .logo {
+            height: 100px;
+            max-width: 100%;
+            float: right;
+        }
+
+        body {
+            background-color: #173B33;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #E4572E;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        button.btn {
+            color: #E4572E;
+            background-color: white;
+            border-radius: 15px;
+            border: none;
+        }
+
+        button.btn:hover {
+            background-color: #f7f7f7;
+        }
+
+        .form-control {
+            background-color: white;
+            color: black;
+        }
+
+        .form-check-label {
+            color: white;
+        }
+
+        input::placeholder {
+            color: #999;
+        }
     </style>
   </head>
   <body>
@@ -29,7 +80,7 @@
             <div class="mb-3">
                 <label for="name" class="form-label" style="display: block;">
                     <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
-                        <div class="col-4" style="display: flex; align-items: center; justify-content: center;">
+                        <div class="col-4" style="display: flex; align-items: center; justify-content: center; color: white">
                             <strong>Nome <span class="text-danger">*</span></strong>
                         </div>
                         <div class="col-8" style="border-left: solid 1px black; padding: 0px;">
@@ -43,7 +94,7 @@
             <div class="mb-3">
                 <label for="email" class="form-label" style="display: block;">
                     <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
-                        <div class="col-4" style="display: flex; align-items: center; justify-content: center;">
+                        <div class="col-4" style="display: flex; align-items: center; justify-content: center; color: white">
                             <strong>Email <span class="text-danger">*</span></strong>
                         </div>
                         <div class="col-8" style="border-left: solid 1px black; padding: 0px;">
@@ -57,7 +108,7 @@
             <div class="mb-3">
                 <label for="phone" class="form-label" style="display: block;">
                     <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
-                        <div class="col-4" style="display: flex; align-items: center; justify-content: center;">
+                        <div class="col-4" style="display: flex; align-items: center; justify-content: center; color: white">
                             <strong>Telefone <span class="text-danger">*</span></strong>
                         </div>
                         <div class="col-8" style="border-left: solid 1px black; padding: 0px;">
@@ -71,7 +122,7 @@
             <div class="mb-3">
                 <label for="nif" class="form-label" style="display: block;">
                     <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
-                        <div class="col-4" style="display: flex; align-items: center; justify-content: center;">
+                        <div class="col-4" style="display: flex; align-items: center; justify-content: center; color: white">
                             <strong>NIF</strong>
                         </div>
                         <div class="col-8" style="border-left: solid 1px black; padding: 0px;">
@@ -85,7 +136,7 @@
             <div class="mb-3">
                 <label for="address" class="form-label" style="display: block;">
                     <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
-                        <div class="col-4" style="display: flex; align-items: center; justify-content: center;">
+                        <div class="col-4" style="display: flex; align-items: center; justify-content: center; color: white">
                             <strong>Morada</strong>
                         </div>
                         <div class="col-8" style="border-left: solid 1px black; padding: 0px;">
@@ -99,7 +150,7 @@
             <div class="mb-3">
                 <label for="password" class="form-label" style="display: block;">
                     <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
-                        <div class="col-4" style="display: flex; align-items: center; justify-content: center;">
+                        <div class="col-4" style="display: flex; align-items: center; justify-content: center; color: white">
                             <strong>Senha <span class="text-danger">*</span></strong>
                         </div>
                         <div class="col-8" style="border-left: solid 1px black; padding: 0px;">
@@ -113,7 +164,7 @@
             <div class="mb-3">
                 <label for="confirmPassword" class="form-label" style="display: block;">
                     <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
-                        <div class="col-4" style="display: flex; align-items: center; justify-content: center;">
+                        <div class="col-4" style="display: flex; align-items: center; justify-content: center; color: white">
                             <strong>Confirmar Senha <span class="text-danger">*</span></strong>
                         </div>
                         <div class="col-8" style="border-left: solid 1px black; padding: 0px;">
@@ -221,6 +272,11 @@
                 alert("Você deve concordar com os Termos e Condições.");
             }
 
+            if (!viewModel.password().trim()) {
+                valid = false;
+                $("#password-error").text("A senha é obrigatória.");
+            }
+
             if (valid) {
                 const userData = {
                     name: viewModel.name(),
@@ -242,4 +298,3 @@
         });
     </script>
   </body>
-</html>
