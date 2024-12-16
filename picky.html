@@ -251,6 +251,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             const dogId = urlParams.get('dogId');
             let dogData = JSON.parse(localStorage.getItem(`dog-${dogId}`));
+            $(".app-title").text(dogData.name)
             $(document).ready(function () {
                 const urlParams = new URLSearchParams(window.location.search);
                 const dogId = urlParams.get('dogId');

@@ -141,6 +141,7 @@
             const nextDogId = dogId + 1; // Calculate the next dog ID
 
             let dogData = JSON.parse(localStorage.getItem(`dog-${dogId}`)) || {};
+            $(".app-title").text(dogData.name)
 
             $('#questionnaireForm').submit(function (event) {
                 event.preventDefault();

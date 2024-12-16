@@ -139,7 +139,7 @@
         <div class="header">
             <img src="images/images-removebg-preview.png" alt="Icon" class="float-end" style="width:37px; height:35px" />
             <a href="illness.html"><i class="fa fa-arrow-left float-start" style="color:white; height:30px; width:30px"></i></a>
-            <h1 class="app-title">Paty</h1>
+            <h1 class="app-title" id="dogname">Paty</h1>
         </div>
         <form id="questionnaireForm">
             <div class="d-flex flex-wrap justify-content-start align-items-center" id="tag-container">
@@ -176,6 +176,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script>
         $(document).ready(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const dogId = urlParams.get('dogId');
+            let dogData = JSON.parse(localStorage.getItem(`dog-${dogId}`)) || {};
+            $("#dogname").text(dogData.name)
             $('.tag').on('click', function () {
                 $(this).toggleClass('tag-selected');
                 $(this).toggleClass('tag-default');
@@ -189,6 +193,7 @@
                 });
             });
 
+
             $('#submitButton').on('click', function (event) {
                 event.preventDefault();  // Prevent the form from submitting
 
@@ -201,7 +206,7 @@
                 const urlParams = new URLSearchParams(window.location.search);
                 const dogId = urlParams.get('dogId');
                 let dogData = JSON.parse(localStorage.getItem(`dog-${dogId}`)) || {};
-
+                $(".app-title").text(dogData.name)
                 // Add the selected illnesses to the dog object
                 dogData.diet = selectedIllnesses;
 

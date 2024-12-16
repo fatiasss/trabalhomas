@@ -208,14 +208,14 @@
         </div>
         <form id="questionnaireForm">
             <div class="label-card">
-                <h2>She weighs</h2>
+                <h2 id="gender">She</h2><h2>weighs</h2>
                 <input type="number"
                        class="custom-input"
                        id="dogCount"
                        min="1"
                        required>
                 kg
-                <h2>and her bodytype is:</h2>
+                <h2>and their bodytype is:</h2>
 
                 <img src="images/image_2024-11-28_203219984_upscaled.png" class="img-fluid my-3" alt="Dog Image" style="width:204px; height:128px" />
                 <div class="radio-group" id="activity">
@@ -279,6 +279,8 @@
             const urlParams = new URLSearchParams(window.location.search);
             const dogId = urlParams.get('dogId');
             let dogData = JSON.parse(localStorage.getItem(`dog-${dogId}`));
+            $(".app-title").text(dogData.name)
+            $("#gender").text(dogData.gender)
             $(document).ready(function () {
                 const urlParams = new URLSearchParams(window.location.search);
                 const dogId = urlParams.get('dogId');

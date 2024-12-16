@@ -116,7 +116,7 @@
     <div class="main-container">
         <div class="header">
             <a href="howmany.html"><i class="fa fa-arrow-left float-start" style="color:white; height:30px; width:30px"></i></a>
-            <h1 class="app-title">Paty</h1>
+            <h1 class="app-title"></h1>
             <img src="images/dog.png" alt="Icon" />
         </div>
         <form id="questionnaireForm" class="text-center mt-4">
@@ -164,10 +164,6 @@
                            required>
                 </div>
                 <button type="submit" class="next-button">Next</button>
-                <div class="section visually-hidden">
-                    <div class="section-title">Name</div>
-                    <div class="section-value" id="gender">Buddy</div>
-                </div>
             </div>
         </form>
     </div>
@@ -180,6 +176,9 @@
             const urlParams = new URLSearchParams(window.location.search);
             const dogId = urlParams.get('dogId');
             let dogData = JSON.parse(localStorage.getItem(`dog-${dogId}`));
+
+            $(".app-title").text(dogData.name)
+            $("#gender").text(dogData.gender)
 
             $('#questionnaireForm').submit(function (event) {
                 event.preventDefault();

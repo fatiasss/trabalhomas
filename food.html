@@ -154,6 +154,8 @@
                 localStorage.setItem(`dog-${dogId}`, JSON.stringify(updatedDogData));
                 window.location.href = `issues.html?dogId=${dogId}`;
             });
+            $(".app-title").text(dogData.name)
+
         });
     </script>
 </body>
