@@ -3,12 +3,57 @@
   "WorkspaceRootPath": "C:\\Users\\eduar\\Documents\\GitHub\\trabalhomas\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\eduar\\documents\\github\\trabalhomas\\perfil_c\u00E3o.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:perfil_c\u00E3o.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\eduar\\documents\\github\\trabalhomas\\create.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:create.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\perfil_c\u00E3o.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:perfil_c\u00E3o.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\picky.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:picky.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\weight.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:weight.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\howmany.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:howmany.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\issues.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:issues.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\dogname.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:dogname.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\food.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:food.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\diet.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:diet.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\illness.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:illness.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\jo\u00E3o farias\\desktop\\lei\\itw\\trabalhomas\\activity.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|solutionrelative:activity.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D837979-FDC6-4374-A5A0-FF8E7DA147D8}|trabalhomas.csproj|c:\\users\\eduar\\documents\\github\\trabalhomas\\picky.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -68,14 +113,22 @@
               "RelativeDocumentMoniker": "perfil_c\u00E3o.html",
               "ToolTip": "C:\\Users\\eduar\\Documents\\GitHub\\trabalhomas\\perfil_c\u00E3o.html",
               "RelativeToolTip": "perfil_c\u00E3o.html",
+<<<<<<< Updated upstream
               "ViewState": "AgIAAGoAAAAAAAAAAAAAAHoAAABDAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-12-16T16:24:27.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 8,
+=======
+              "DocumentIndex": 7,
+>>>>>>> Stashed changes
               "Title": "diet.html",
               "DocumentMoniker": "C:\\Users\\eduar\\Documents\\GitHub\\trabalhomas\\diet.html",
               "RelativeDocumentMoniker": "diet.html",
@@ -84,6 +137,7 @@
               "ViewState": "AgIAAIQAAAAAAAAAAAAAAI0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-12-16T16:24:27.974Z"
+<<<<<<< Updated upstream
             },
             {
               "$type": "Document",
@@ -96,10 +150,28 @@
               "ViewState": "AgIAAIcAAAAAAAAAAAAAAJgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-12-16T16:24:27.983Z"
+=======
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+<<<<<<< Updated upstream
+=======
+              "Title": "howmany.html",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Farias\\Desktop\\lei\\itw\\trabalhomas\\howmany.html",
+              "RelativeDocumentMoniker": "howmany.html",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Farias\\Desktop\\lei\\itw\\trabalhomas\\howmany.html",
+              "RelativeToolTip": "howmany.html",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-16T16:24:27.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+>>>>>>> Stashed changes
               "Title": "home.html",
               "DocumentMoniker": "C:\\Users\\eduar\\Documents\\GitHub\\trabalhomas\\home.html",
               "RelativeDocumentMoniker": "home.html",
@@ -107,12 +179,15 @@
               "RelativeToolTip": "home.html",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAAGcAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-16T16:24:27.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T16:24:27.99Z"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 6,
+>>>>>>> Stashed changes
               "Title": "food.html",
               "DocumentMoniker": "C:\\Users\\eduar\\Documents\\GitHub\\trabalhomas\\food.html",
               "RelativeDocumentMoniker": "food.html",
@@ -124,7 +199,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 10,
+=======
+              "DocumentIndex": 9,
+>>>>>>> Stashed changes
               "Title": "illness.html",
               "DocumentMoniker": "C:\\Users\\eduar\\Documents\\GitHub\\trabalhomas\\illness.html",
               "RelativeDocumentMoniker": "illness.html",
@@ -136,7 +215,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 9,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "issues.html",
               "DocumentMoniker": "C:\\Users\\eduar\\Documents\\GitHub\\trabalhomas\\issues.html",
               "RelativeDocumentMoniker": "issues.html",
@@ -148,7 +231,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 1,
+>>>>>>> Stashed changes
               "Title": "picky.html",
               "DocumentMoniker": "C:\\Users\\eduar\\Documents\\GitHub\\trabalhomas\\picky.html",
               "RelativeDocumentMoniker": "picky.html",
@@ -190,7 +277,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 5,
+>>>>>>> Stashed changes
               "Title": "dogname.html",
               "DocumentMoniker": "C:\\Users\\eduar\\Documents\\GitHub\\trabalhomas\\dogname.html",
               "RelativeDocumentMoniker": "dogname.html",
@@ -198,7 +289,24 @@
               "RelativeToolTip": "dogname.html",
               "ViewState": "AgIAAKoAAAAAAAAAAAAAALgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+<<<<<<< Updated upstream
               "WhenOpened": "2024-12-16T16:24:27.977Z"
+=======
+              "WhenOpened": "2024-12-16T16:24:27.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "activity.html",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Farias\\Desktop\\lei\\itw\\trabalhomas\\activity.html",
+              "RelativeDocumentMoniker": "activity.html",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Farias\\Desktop\\lei\\itw\\trabalhomas\\activity.html",
+              "RelativeToolTip": "activity.html",
+              "ViewState": "AgIAAOwAAAAAAAAAAAASwP0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-16T16:24:27.98Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -210,7 +318,11 @@
               "RelativeToolTip": "activity.html",
               "ViewState": "AgIAAOwAAAAAAAAAAAASwP0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+<<<<<<< Updated upstream
               "WhenOpened": "2024-12-16T16:24:27.98Z"
+=======
+              "WhenOpened": "2024-12-16T16:24:27.936Z"
+>>>>>>> Stashed changes
             }
           ]
         }

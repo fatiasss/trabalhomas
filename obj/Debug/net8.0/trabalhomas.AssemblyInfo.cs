@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("trabalhomas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7fb8795aa95989ccdfcff6cfe55bc437757d1ca")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acade2b40d66c4481241b30e40ec1818edf0e5fa")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("trabalhomas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("trabalhomas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
