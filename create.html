@@ -1,36 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>PawPal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-    />
-    <!--Remote links-->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
-    />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" rel="stylesheet" />
     <link href="login.css" rel="stylesheet" />
     <style>
         .error-message { color: red; font-size: 0.9em; }
@@ -40,14 +19,12 @@
   </head>
   <body>
     <div class="container mt-5">
-        <!-- Arrow Button with Navigation to Login Page -->
         <button type="button" class="btn" onclick="window.location.href='login.html'">
-          <i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i>
         </button>
-        
         <img class="logo" src="images/images-removebg-preview.png">
         <h2 class="mb-4" style="clear: right"><strong>Criar Conta</strong></h2>
-        
+
         <form id="create-account-form">
             <div class="mb-3">
                 <label for="name" class="form-label" style="display: block;">
@@ -62,7 +39,6 @@
                 </label>
                 <div id="name-error" class="error-message"></div>
             </div>
-            
 
             <div class="mb-3">
                 <label for="email" class="form-label" style="display: block;">
@@ -77,7 +53,7 @@
                 </label>
                 <div id="email-error" class="error-message"></div>
             </div>
-            
+
             <div class="mb-3">
                 <label for="phone" class="form-label" style="display: block;">
                     <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
@@ -91,7 +67,7 @@
                 </label>
                 <div id="phone-error" class="error-message"></div>
             </div>
-            
+
             <div class="mb-3">
                 <label for="nif" class="form-label" style="display: block;">
                     <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
@@ -105,7 +81,7 @@
                 </label>
                 <div id="nif-error" class="error-message"></div>
             </div>
-            
+
             <div class="mb-3">
                 <label for="address" class="form-label" style="display: block;">
                     <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
@@ -119,46 +95,69 @@
                 </label>
             </div>
 
+            <!-- Password Inputs -->
+            <div class="mb-3">
+                <label for="password" class="form-label" style="display: block;">
+                    <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
+                        <div class="col-4" style="display: flex; align-items: center; justify-content: center;">
+                            <strong>Senha <span class="text-danger">*</span></strong>
+                        </div>
+                        <div class="col-8" style="border-left: solid 1px black; padding: 0px;">
+                            <input type="password" id="password" class="form-control" data-bind="value: password" placeholder="Crie sua senha" style="border: none; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        </div>
+                    </div>
+                </label>
+                <div id="password-error" class="error-message"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label" style="display: block;">
+                    <div class="row" style="border-radius: 15px; border: 1px solid black; padding: 0px;">
+                        <div class="col-4" style="display: flex; align-items: center; justify-content: center;">
+                            <strong>Confirmar Senha <span class="text-danger">*</span></strong>
+                        </div>
+                        <div class="col-8" style="border-left: solid 1px black; padding: 0px;">
+                            <input type="password" id="confirmPassword" class="form-control" data-bind="value: confirmPassword" placeholder="Repita sua senha" style="border: none; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        </div>
+                    </div>
+                </label>
+                <div id="confirm-password-error" class="error-message"></div>
+            </div>
+
             <div class="col-12">
                 <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    name="InvalidCheck"
-                    type="checkbox"
-                    value=""
-                    id="invalidCheck"
-                    required
-                  />
-                  <label class="form-check-label" for="invalidCheck"
-                    >Concordo com os Termos e Condições.<span class="text-danger">*</span></label
-                  >
-                  <div class="invalid-feedback">
-                    <i class="fa fa-warning"></i> Tem de concordar com os Termos e
-                    Condições antes de submeter o formulário.
-                  </div>
+                    <input class="form-check-input" name="InvalidCheck" type="checkbox" value="" id="invalidCheck" required />
+                    <label class="form-check-label" for="invalidCheck">
+                        Concordo com os Termos e Condições.<span class="text-danger">*</span>
+                    </label>
                 </div>
-              </div>
+            </div>
+
             <div style="display: flex; justify-content: center; margin-top: 70px">
                 <button type="button" class="btn btn-light" id="submit-button" style="height: 50px"><strong>Criar Conta</strong></button>
             </div>
         </form>
     </div>
 
-    <!-- Modal -->
-
+    <!-- Ensure CryptoJS is included first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1-crypto-js.js"></script>
+    
+    <!-- Then include the other scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
     <script>
         function ViewModel() {
             const self = this;
-
             self.name = ko.observable("");
             self.email = ko.observable("");
             self.phone = ko.observable("");
             self.nif = ko.observable("");
             self.address = ko.observable("");
+            self.password = ko.observable("");
+            self.confirmPassword = ko.observable("");
         }
 
         const viewModel = new ViewModel();
@@ -177,48 +176,49 @@
             return /^(\d{9})$/.test(nif);
         }
 
-        // Function to generate a random salt and use it to derive a key
-        function generateRandomKey(email) {
-            const CryptoJS = require("crypto-js");
-
-            // Create a random salt using the email address
-            const salt = CryptoJS.lib.WordArray.random(128 / 8); // 128-bit random value
-
-            // Use the email + salt to generate a unique key using SHA256 (PBKDF2 can also be used for stronger keys)
-            const key = CryptoJS.SHA256(email + salt.toString(CryptoJS.enc.Base64)).toString(CryptoJS.enc.Base64);
-
-            return key;
-        }
-
         $("#submit-button").on("click", function () {
-            console.log("Botão Submeter clicado.");
-
             let valid = true;
-
             $(".error-message").text("");
 
             if (!viewModel.name().trim()) {
                 valid = false;
-                console.log("Validação falhou: Nome vazio.");
                 $("#name-error").text("O nome é obrigatório.");
             }
 
             if (!validateEmail(viewModel.email())) {
                 valid = false;
-                console.log("Validação falhou: Email inválido.");
                 $("#email-error").text("Insira um email válido.");
             }
 
             if (!validatePhone(viewModel.phone())) {
                 valid = false;
-                console.log("Validação falhou: Telefone inválido.");
                 $("#phone-error").text("Insira um número de telefone válido.");
             }
 
             if (viewModel.nif() && !validateNIF(viewModel.nif())) {
                 valid = false;
-                console.log("Validação falhou: NIF inválido.");
                 $("#nif-error").text("Insira um NIF válido.");
+            }
+
+            if (viewModel.password() !== viewModel.confirmPassword()) {
+                valid = false;
+                $("#confirm-password-error").text("As senhas não coincidem.");
+            }
+
+            // Check if the email or phone already exists in localStorage
+            if (localStorage.getItem(viewModel.email())) {
+                valid = false;
+                $("#email-error").text("Este email já está registrado.");
+            }
+
+            if (localStorage.getItem(viewModel.phone())) {
+                valid = false;
+                $("#phone-error").text("Este número de telefone já está registrado.");
+            }
+
+            if (!$('#invalidCheck').is(':checked')) {
+                valid = false;
+                alert("Você deve concordar com os Termos e Condições.");
             }
 
             if (valid) {
@@ -227,27 +227,17 @@
                     email: viewModel.email(),
                     phone: viewModel.phone(),
                     nif: viewModel.nif(),
-                    address: viewModel.address()
+                    address: viewModel.address(),
+                    password: viewModel.password() // Store password (normally should be encrypted)
                 };
-                console.log("Dados do usuário antes da criptografia:", userData);
 
-                // Generate a unique key for this user
-                const userKey = generateRandomKey(viewModel.email());
-
-                // Encrypt the data with the unique user key
-                const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(userData), userKey).toString();
-
-                console.log("Dados criptografados:", encryptedData);
-
-                // Store the encrypted data (you could store the key securely, but for simplicity, we are storing encrypted data here)
-                localStorage.setItem("user_data", encryptedData);
+                // Store the encrypted data
+                localStorage.setItem(viewModel.email(), JSON.stringify(userData));
                 alert("Conta criada com sucesso! Verifique o seu email para ativar a conta.");
-                console.log("Dados armazenados no localStorage com sucesso.");
 
                 // Reset the form
                 $("#create-account-form")[0].reset();
-            } else {
-                console.log("Erro na validação dos dados. Formulário não enviado.");
+                window.location.replace("http://127.0.0.1:5501/login.html");
             }
         });
     </script>
