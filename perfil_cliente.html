@@ -108,74 +108,51 @@
         input::placeholder {
             color: #999;
         }
-        #mt-5 {align-content: center
 
-
+        #mt-5 {
+            align-content: center
         }
     </style>
-    
+
 </head>
 <body>
     <div class="row mt-5">
 
-        <div class="col-3">
-            <img src="imagem corgi.jpeg" alt="Image dog" />
-        </div>
         <img class="logo" src="images/images-removebg-preview.png">
         <div class="content container">
             <div class="section">
                 <div class="section-title">Name</div>
-                <div class="section-value" contenteditable="true" id="name">Paty</div>
+                <div class="section-value" contenteditable="true" id="name">Igor</div>
                 <div class="arrow" style="top: 25px; left: 275px;"></div>
             </div>
 
             <div class="section">
-                <div class="section-title">Has been Spayed?</div>
-                <div class="section-value" contenteditable="true" id="spayed">Yes</div>
+                <div class="section-title">Email</div>
+                <div class="section-value" contenteditable="true" id="spayed">igor@email.com</div>
                 <div class="arrow" style="top: 25px; left: 275px;"></div>
             </div>
 
             <div class="section">
-                <div class="section-title">Breed</div>
-                <div class="section-value" contenteditable="true" id="breed">Corgi</div>
+                <div class="section-title">Telefone</div>
+                <div class="section-value" contenteditable="true" id="breed">966 666 666</div>
                 <div class="arrow" style="top: 25px; left: 275px;"></div>
             </div>
 
             <div class="section">
-                <div class="section-title">Weight</div>
-                <div class="section-value" contenteditable="true" id="weight">12 kgs</div>
+                <div class="section-title">NIF</div>
+                <div class="section-value" contenteditable="true" id="weight">255555555</div>
                 <div class="arrow" style="top: 25px; left: 275px;"></div>
             </div>
 
             <div class="section attribute-section">
-                <div class="section-title">Attributes</div>
-                <div class="section-value" contenteditable="true">Active</div>
-                <div class="section-value" contenteditable="true">Picky Eater</div>
-                <div class="section-value" contenteditable="true">Round Body</div>
+                <div class="section-title">Morada</div>
+                <div class="section-value" contenteditable="true">Rua X, nºx,Aveiro</div>
                 <div class="arrow" style="top: 25px; left: 275px;"></div>
             </div>
 
             <div class="section">
-                <div class="section-title">Illnesses</div>
-                <div class="section-value" contenteditable="true">Bad Breath</div>
-                <div class="section-value" contenteditable="true">Constipation</div>
-                <div class="arrow" style="top: 25px; left: 275px;"></div>
-            </div>
-            <div class="section">
-                <div class="section-title">Prescription Diet</div>
-                <div class="section-value" contenteditable="true">None</div>
-                <div class="arrow" style="top: 25px; left: 275px;"></div>
-            </div>
-
-            <div class="section">
-                <div class="section-title">Is Vaccinated</div>
-                <div class="section-value" contenteditable="true">Yes</div>
-                <div class="arrow" style="top: 25px; left: 275px;"></div>
-            </div>
-
-            <div class="section">
-                <div class="section-title">Previous Treatments</div>
-                <div class="section-value" contenteditable="true">None</div>
+                <div class="section-title">Senha</div>
+                <div class="section-value" contenteditable="true">*******</div>
                 <div class="arrow" style="top: 25px; left: 275px;"></div>
             </div>
 
@@ -185,7 +162,7 @@
 
 
 
-        <script>
+    <script>
 
             document.getElementById("loadButton").onclick = function () {
                 var name = document.getElementById("name").innerText;
@@ -204,7 +181,7 @@
                 console.log("Weight: " + weight);
                 console.log("Attributes: " + attributes.join(", "));
             }
-        </script>
+    </script>
 
 </body>
 </html>
